@@ -1,0 +1,297 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif
+}
+header{    
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+}
+body{
+    height: 300vh;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head{
+    width: 100%;
+    height: 20vh;
+    /* z-index: 1000; */
+    background: #fff;
+}
+.first .head .container{
+    width: 100%;
+}
+.head .first{
+    width: 100%;
+    height: 25px;
+    background: #000;
+}
+.head .custom-row {
+    width: 100%;
+    height: 30px;
+    /* margin-top: 75px; */
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.head .custom-row div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.head .custom-row div a:hover{
+    /* color: #666; */
+    border-bottom: 1px solid rgb(252, 252, 252);
+}
+.head .custom-row a b i{
+    color: rgb(218, 218, 218);
+    letter-spacing: 2px;
+}
+.end{
+    height: 10px;
+}
+.head .middle{
+    display: flex;
+    justify-content: flex-end;
+}
+.head .middle ul{
+    display: flex;
+    color: rgb(0, 0, 0);
+
+}
+.head .middle ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(0, 0, 0);
+    margin: 7px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+}
+.head .end .logo img{
+    position: relative;
+    width: 60px;
+    height: 45px;
+    margin-top: -70 px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.head .end .menu{
+   align-items: center;
+   display: flex;
+   justify-content: center;
+}
+.head .end .menu ul{
+    display: flex;
+    margin-top: -30px;    
+}
+.head .end .menu ul li a{
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    padding: 10px 16px;
+    color: #000;
+}
+.head .end .menu ul li a:hover{
+    /* color: #dea; */
+    border-bottom: 2px solid #000;
+}
+.head .end .search-box{
+    display: flex;
+    justify-content: space-around;   
+} 
+.head .end .search-box input{
+    margin-top: -35px; 
+    margin-left: 1100px;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 22px;
+    height: 30px;
+    width: 194px;
+    padding: 0 8px;
+    display: flex;
+    background: rgb(190, 190, 190);
+}
+.head .end .search-box span{
+    font-size: 18px;
+    bottom: 28px;
+    left: 1265px;
+    background: rgb(190, 190, 190);
+    height: 30px;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+.head .end .search-box ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -40px; 
+    gap: 15px;
+    margin-right: 100px;
+}
+.head .end .search-box ul li a{    
+    font-size: 22px;
+    letter-spacing: 6px;
+    color: #000;
+}
+main{
+    background: url(/assets/image/bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100vh;
+}
+.bg-line .text h1{
+    color: #fff;
+    position: absolute;
+    bottom: 250px;
+    left: 75px;
+}
+.bg-line .text p{
+    color: #fff;
+    width: 22%;
+    position: absolute;
+    bottom: 175px;
+    font-size: 15px;
+    left: 75px;
+}
+.bg-line .btn button{
+    background: rgb(255, 255, 255);
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 130px;
+    left: 140px;
+    height: 50px;
+    width: 130px;
+    text-transform: uppercase;
+    box-shadow: rgba(34, 34, 34, 0.7) 5px 10px 10px 3px;
+
+}
+.text-line > h2{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.text-line .custom-btn >button{
+    text-align: center;
+    margin: 15px;
+    margin-left: 350px;
+    text-transform: uppercase;
+}
+.text > a{
+    margin: 10px 10px;
+    margin-left: 2px;
+    font-size: 14px;
+    color: #000;
+}
+.text > a:hover{
+    color: #fff;
+    background-color: #000 ;
+}
+.cards-wrapper{
+    display: flex;
+    margin-top: 20px;
+}
+.card{
+    margin: 0 .5em;
+    width: calc(100%/3);
+    overflow: hidden;
+}
+.card:hover{
+    border: 1px solid black;
+    transform: scale(0.9);
+    overflow: hidden;
+}
+.card > span{
+    width: 30px;
+    background-color: #fff;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+.image-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.card-body > p{
+    font-size: 12px;
+    margin-left: 5px;
+}
+.card-body > span{
+    font-size: 10px;
+    line-height: 5px    ;
+}
+.shose{
+    width: 100%;
+}
+.card-item .container .shose div img{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    height: 350px;
+} 
+.card-item .container .shose{
+    width: 100%;
+    gap: 5px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    object-fit: contain;
+}
+.card-item .container .shose div > span{
+    margin-top: 30px;
+}
+.card-item .container .shose img:hover{
+    opacity: 0.8;
+    transform: scale(1);
+    overflow: hidden;
+    object-fit: contain;
+}
+@media screen and (max-width: 600px){
+    header{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .head .end .logo{
+        position: fixed;
+    }
+    .head .end ul{
+        display: flex;
+        flex-direction: column;background: #fff;
+    }
+    .head .end ul li{
+        text-align: center;
+    }
+    .head .end ul li a{
+        display: block;
+        font-size: 25px;
+        padding: 20px;
+        color: #000;
+    }
+    .head .end .search-box{
+        display: inline-block;
+        width: 100%;
+        justify-content: center;
+        padding: 15px;
+    }
+    .head .end .search-box input{
+        width: 90%;
+    }
+}
