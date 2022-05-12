@@ -10,7 +10,7 @@ header{
     background-color: rgb(255, 255, 255);
 }
 body{
-    height: 300vh;
+    /* height: 700vh; */
 }
 nav{
     display: flex;
@@ -20,7 +20,6 @@ nav{
 .head{
     width: 100%;
     height: 20vh;
-    /* z-index: 1000; */
     background: #fff;
 }
 .first .head .container{
@@ -34,7 +33,6 @@ nav{
 .head .custom-row {
     width: 100%;
     height: 30px;
-    /* margin-top: 75px; */
     display: flex;
     justify-content: space-between;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -47,7 +45,6 @@ nav{
     font-weight: bold;
 }
 .head .custom-row div a:hover{
-    /* color: #666; */
     border-bottom: 1px solid rgb(252, 252, 252);
 }
 .head .custom-row a b i{
@@ -102,7 +99,6 @@ nav{
     color: #000;
 }
 .head .end .menu ul li a:hover{
-    /* color: #dea; */
     border-bottom: 2px solid #000;
 }
 .head .end .search-box{
@@ -178,7 +174,10 @@ main{
     width: 130px;
     text-transform: uppercase;
     box-shadow: rgba(34, 34, 34, 0.7) 5px 10px 10px 3px;
-
+}
+.bg-line .btn button:hover{
+    background: #e2e2e2;
+    transform: scale(1.1);
 }
 .text-line > h2{
     text-align: center;
@@ -202,7 +201,7 @@ main{
 }
 .text > a:hover{
     color: #fff;
-    background-color: #000 ;
+    background-color: #000;
 }
 .cards-wrapper{
     display: flex;
@@ -210,13 +209,17 @@ main{
 }
 .card{
     margin: 0 .5em;
-    width: calc(100%/3);
+    width: 100%;
     overflow: hidden;
+    position: relative;
 }
-.card:hover{
+.card:hover,
+span:hover
+{
     border: 1px solid black;
-    transform: scale(0.9);
     overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
 }
 .card > span{
     width: 30px;
@@ -228,6 +231,17 @@ main{
     max-width: 100%;
     max-height: 100%;
 }
+.image-wrapper>button{
+    width: 2px;
+    height: 2px;
+}
+.image-wrapper>button>i{
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    background-color: #fff;
+    
+}
 .card-body > p{
     font-size: 12px;
     margin-left: 5px;
@@ -238,21 +252,30 @@ main{
 }
 .shose{
     width: 100%;
+    position: relative;
+}
+.shose>div>span{
+    margin-left: 120px;
+    position: absolute;
+    top: 85%;
+    text-decoration: underline;
+    border: none;
+    color: #000;
+}
+.shose>div>span:hover{
+    background-color: #000;
+    color: #fff;
 }
 .card-item .container .shose div img{
     margin-top: 30px;
     display: flex;
     justify-content: space-around;
-    width: 300px;
-    height: 350px;
+    width: 280px;
+    height: 280px;
+    padding: 10px;
 } 
-.card-item .container .shose{
-    width: 100%;
-    gap: 5px;
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    object-fit: contain;
+.card-item .container .text h1{
+    margin-top: 40px;
 }
 .card-item .container .shose div > span{
     margin-top: 30px;
@@ -262,7 +285,156 @@ main{
     transform: scale(1);
     overflow: hidden;
     object-fit: contain;
+    cursor: pointer;
 }
+.slides .title > a > h2{
+    font-size: 12px;
+    margin-top: 20px;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 50px;
+    padding-left: 55px;
+}
+.slides > .title > a{
+    font-size: 12px;
+    margin-top: 20px;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 50px;
+    padding-left: 55px;
+}
+.owl-dots > button > span{
+    width: 20px !important;
+    height: 1px !important;
+    background: #525252 !important;
+    border-radius: 0 !important;
+} 
+.owl-dots > button.active > span{
+    height: 5px !important;
+    background: #666 !important;
+}
+.custom-item{
+    position: relative;
+}
+.custom-item .item-two:hover, span:hover{
+    border: 1px solid black;
+}
+.custom-item .item-two .img > button > i{
+    position: absolute;
+    left: 80%;
+    top: 5%;
+    background: #fff;
+}
+.custom-item .item-two .img >img{
+    position: relative;
+}
+.custom-item .item-two > span{
+    position: absolute;
+    width: 30px;
+    background-color: #fff;
+    top: 60%;
+}
+.info{
+    background-color: rgb(233, 233, 233);
+    font-size: 14px;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px 80px;
+    height: 500px;
+}
+.column > h3{
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: 550;
+    letter-spacing: 2px;
+}
+.column > p{
+    margin-top: 40px;
+    letter-spacing: 1px;
+    font-size: 11px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  footer .desc{
+      background: #f2e726;
+      height: 150px;
+      padding-top: 35px;
+  }
+  .desc h1{
+      font-size: 30px;
+      font-weight: 500;
+      margin-top: 0px;
+      margin-left: 250px;
+  }
+  .desc .btn button{
+    background: rgb(0, 0, 0);
+    border: 1px solid black;
+    color: rgb(255, 255, 255);
+    bottom: 130px;
+    margin-left: 750px;
+    margin-top: -15px;
+    height: 45px;
+    width: 190px;
+    align-self: center;
+    text-transform: uppercase;
+    box-shadow: rgba(34, 34, 34, 0.7) 5px 10px 10px 3px;
+}
+.desc .btn button:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.footer ul h3{
+    font-size: 20px; 
+    font-weight: bold;   
+}
+.footer ul li a{
+    text-decoration: none;
+    color: #000;
+    line-height: 5px;
+    font-size: 12px;
+}
+.footer ul li a:hover{
+    border-bottom: 1px solid #000;
+}
+.final{
+    background: #666;
+    height: 120px;
+    padding-top: 35px;
+    position: relative;
+}
+.final a{
+    margin-left: 80px;
+    background-color: rgb(211, 211, 211);
+    text-decoration: none;
+}
+.final a i{
+    margin: 8px;
+    color: #111;
+}
+.final p{
+    margin-left: 65px;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 40px;
+}
+.final .line > a{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
 @media screen and (max-width: 600px){
     header{
         float: none;

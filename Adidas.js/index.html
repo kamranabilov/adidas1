@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adidas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
@@ -87,14 +89,15 @@
                     <a href="#">CLOUDFOAM PURE 2.0 SHOES</a>
                     <a href="#">WOMENS CLOUDFOAM PURE 2.0 RUNNING SHOES</a>                    
                 </div>                
-
                 <div id="carouselExampleControls" class="carousel carousel-dark slide " data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <div class="cards-wrapper">
                             <div class="card" >
-                                <div class="image-wrapper">
+                                <div class="image-wrapper">                                    
                                     <img src="assets/image/shose.webp" class="card-img-top" alt="...">
+                                    <button href="#" onclick="handleAddToBasket"><i class="fa-regular fa-heart"></i>
+                                    </button>
                                 </div>
                                 <span>$75</span>
                                 <div class="card-body">
@@ -105,6 +108,8 @@
                               <div class="card" >
                                 <div class="image-wrapper">
                                     <img src="assets/image/shose1.webp"  alt="...">
+                                    <button href="#" onclick="handleAddToBasket"><i class="fa-regular fa-heart"></i>
+                                    </button>
                                 </div>
                                 <span>$75</span>
                                 <div class="card-body">
@@ -115,6 +120,8 @@
                               <div class="card" >
                                 <div class="image-wrapper">
                                     <img src="assets/image/shose2.webp"  alt="...">
+                                    <button href="#" onclick="handleAddToBasket"><i class="fa-regular fa-heart"></i>
+                                    </button>
                                 </div>
                                 <span>$75</span>
                                 <div class="card-body">
@@ -129,6 +136,8 @@
                             <div class="card" >
                                 <div class="image-wrapper">
                                     <img src="assets/image/shose3.webp"  alt="...">
+                                    <button href="#" onclick="handleAddToBasket"><i class="fa-regular fa-heart"></i>
+                                    </button>
                                 </div>
                                 <span>$75</span>
                                 <div class="card-body">
@@ -139,6 +148,8 @@
                               <div class="card" >
                                 <div class="image-wrapper">
                                     <img src="assets/image/shose4.webp"  alt="...">
+                                    <button href="#" onclick="handleAddToBasket"><i class="fa-regular fa-heart"></i>
+                                    </button>
                                 </div>
                                 <span>$75</span>
                                 <div class="card-body">
@@ -149,6 +160,8 @@
                               <div class="card" >
                                 <div class="image-wrapper">
                                     <img src="assets/image/shose5.webp"  alt="...">
+                                    <button href="#" onclick="handleAddToBasket"><i class="fa-regular fa-heart"></i>
+                                    </button>
                                 </div>
                                 <span>$75</span>
                                 <div class="card-body">
@@ -163,6 +176,8 @@
                             <div class="card" >
                                 <div class="image-wrapper">
                                     <img src="assets/image/shose7.jpg" alt="...">
+                                    <button href="#" onclick="handleAddToBasket"><i class="fa-regular fa-heart"></i>
+                                    </button>
                                 </div>
                                 <span>$75</span>
                                 <div class="card-body">
@@ -173,6 +188,8 @@
                               <div class="card" >
                                 <div class="image-wrapper">
                                     <img src="assets/image/shose.webp"  alt="...">
+                                    <button href="#" onclick="handleAddToBasket"><i class="fa-regular fa-heart"></i>
+                                    </button>
                                 </div>
                                 <span>$75</span>
                                 <div class="card-body">
@@ -183,6 +200,8 @@
                               <div class="card" >
                                 <div class="image-wrapper">
                                     <img src="assets/image/shose5.webp" alt="...">
+                                    <button href="#" onclick="handleAddToBasket"><i class="fa-regular fa-heart"></i>
+                                    </button>
                                 </div>
                                 <span>$75</span>
                                 <div class="card-body">
@@ -217,25 +236,219 @@
                     </div>               
                     <div class="col-3">
                             <img src="/assets/image/shose.webp" at="wiew">                
-                            <span>CLOUDFOAM PURE 2.0 SHOES</span>                    
+                            <span>Women's Shoes</span>                    
                     </div> 
                     <div class="col-3">
                         <img src="/assets/image/shose1.webp" at="wiew">
-                        <span>CLOUDFOAM PURE 2.0 SHOES</span>                   
+                        <span>NMD</span>                   
                     </div> 
                     <div class="col-3">
                             <img src="/assets/image/shose2.webp" at="wiew">
-                            <span>CLOUDFOAM PURE 2.0 SHOES</span>                    
+                        <span>Stan Smith</span>                    
                     </div>
                     <div class="col-3">
-                        <img src="/assets/image/shose.webp" at="wiew">
-                        <span>CLOUDFOAM PURE 2.0 SHOES</span>                    
+                        <img src="/assets/image/adidas.webp" at="wiew">
+                        <span>Men's Shoes</span>                    
                 </div>
                 </div>
                   
         </div>
     </section>
+
+    
+      <section class="slides">
+       <div class="title">
+        <a href="#"><hr><h2>NEW ARRIVALS</h2><hr></a> 
+       </div>
+        <div class="owl-carousel owl-theme custom-item">
+            <div class="item item-two">                
+                <div class="img">
+                    <img src="/assets/image/carousel1.webp" alt="">
+                    <button href="#" onclick="handleAddToBasket"><i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <span>$55</span>
+                <div class="card-body">
+                 <p>ADICOLOR ESSENTIALS TREFOIL HOODIE</p>
+                <span>New</span>
+                </div>
+            </div>
+            <div class="item item-two">
+                <div  class="img">
+                    <img src="/assets/image/carousel2.webp" alt="">
+                    <button href="#" onclick="handleAddToBasket"><i class="fa-regular fa-heart"></i>
+                    </button>                    
+                </div>
+                <span>$55</span>
+                <div class="card-body">
+                 <p>ADICOLOR ESSENTIALS TREFOIL HOODIE</p>
+                <span>New</span>
+                </div>
+            </div>
+            <div class="item item-two">
+                <div  class="img">
+                    <img src="/assets/image/carousel1.webp" alt="">
+                    <button href="#" onclick="handleAddToBasket"><i class="fa-regular fa-heart"></i>
+                    </button>                    
+                </div>
+                <span>$55</span>
+                <div class="card-body">
+                 <p>ADICOLOR ESSENTIALS TREFOIL HOODIE</p>
+                <span>New</span>
+                </div>
+            </div>
+            <div class="item item-two">
+                <div class="img">
+                    <img src="/assets/image/carousel2.webp" alt="">
+                    <button href="#" onclick="handleAddToBasket"><i class="fa-regular fa-heart"></i>
+                    </button>                    
+                </div>
+                <span>$55</span>
+                <div class="card-body">
+                 <p>ADICOLOR ESSENTIALS TREFOIL HOODIE</p>
+                <span>New</span>
+                </div>
+            </div>
+            <div class="item item-two">
+                <div  class="img">
+                    <img src="/assets/image/carousel1.webp" alt="">
+                    <button href="#" onclick="handleAddToBasket"><i class="fa-regular fa-heart"></i>
+                    </button>                                        
+                </div>
+                <span>$55</span>
+                <div class="card-body">
+                 <p>ADICOLOR ESSENTIALS TREFOIL HOODIE</p>
+                <span>New</span>
+                </div>
+            </div>
+            <div class="item item-two">
+                <div  class="img">
+                    <img src="/assets/image/carousel1.webp" alt="">
+                    <button href="#" onclick="handleAddToBasket"><i class="fa-regular fa-heart"></i>
+                    </button>                    
+                </div>
+                <span>$55</span>
+                    <div class="card-body">
+                     <p>ADICOLOR ESSENTIALS TREFOIL HOODIE</p>
+                    <span>New</span>
+                    </div>
+            </div>
+            <div class="item item-two">
+                <div  class="img">
+                    <img src="/assets/image/carousel1.webp" alt="">
+                    <button href="#" onclick="handleAddToBasket"><i class="fa-regular fa-heart"></i>
+                    </button>                    
+                </div>
+                <span>$55</span>
+                <div class="card-body">
+                 <p>ADICOLOR ESSENTIALS TREFOIL HOODIE</p>
+                <span>New</span>
+                </div>
+            </div>           
+        </div>
+      </section>
+
+      <section>
+          <div class="row info">
+              <div class="column">
+                <h3>STORIES, STYLE, AND SPORTING GOODS AT ADIDAS, SINCE 1949</h3>             
+                <p>Through sports, we have the power to change lives. Sports keep us fit. They keep us mindful. They bring us together. Athletes inspire us. They help us to get up and get moving. And sporting goods featuring the latest technologies help us beat our personal best. adidas is home to the runner, the basketball player, the soccer kid, the fitness enthusiast, the yogi. And even the weekend hiker looking to escape the city. The 3-Stripes are everywhere and anywhere. In sports. In music. On life’s stages. Before the whistle blows, during the race, and at the finish line. We’re here to support creators. To improve their game. To live their lives. And to change the world.
+
+                <p>adidas is about more than sportswear and workout clothes. We partner with the best in the industry to co-create. This way we offer our fans the sporting goods, style and clothing that match the athletic needs, while keeping sustainability in mind. We’re here to support creators. Improve their game. Create change. And we think about the impact we have on our world.</p>
+              </p>
+              </div>
+                <div class="column">                    
+                        <h3>WORKOUT CLOTHES, FOR ANY SPORT</h3>
+                    <p>adidas designs for athletes of all kinds. Creators who love to change the game. People who challenge conventions, break the rules, and define new ones. Then break them all over again. We design sports apparel that gets you moving, winning, and living life to the fullest. We create bras and tights for female athletes who play just as hard as the men. From low to high support. Maximum comfort. We design, innovate and iterate. We test new technologies in action. On the field, the track, the court, and in the pool. We’re inspired by retro workout clothes, creating new streetwear essentials. From NMD and Ozweego to our Firebird tracksuits. From Stan Smith to Superstar. Classic sports models are brought back to life on the streets and the stages around the world.
+        
+                    <p>Through our collections we blur the borders between high fashion and high performance. Like our adidas by Stella McCartney athletic clothing collection – designed to look the part inside and outside of the gym. Or some of our adidas Originals lifestyle pieces, that can be worn as sports apparel too. Our lives are constantly changing. Becoming more and more versatile. And adidas designs with that in mind.</p>
+                </p>
+                </div>                        
+          </div>
+      </section>
+      <footer>
+          <div class="desc">
+              <h1>JOIN OUR ADICLUB & GET 15% OFF</h1>
+              <div class="btn">
+                <button>Sign up for free <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+          </div>
+      </footer>
+
+      <footer>
+          <div class="footer">
+             
+              <ul>
+                <h3>PRODUCTS</h3>
+                <li> <a href="#">Shoes</a></li>  
+                <li> <a href="#">Clothing</a></li> 
+                <li> <a href="#">Accessories</a></li>                
+                <li> <a href="#">Release Dates</a></li>                
+                <li> <a href="#">Accessories</a></li>                
+                <li> <a href="#">Best Sellers</a></li>                
+                <li> <a href="#">New Arrivals</a></li>                
+                <li> <a href="#">Sale</a></li>                
+              </ul>
+             
+              <ul>
+                <h3>SPORTS</h3>
+                <li> <a href="#">Shoes</a></li>  
+                <li> <a href="#">Clothing</a></li> 
+                <li> <a href="#">Accessories</a></li>                
+                <li> <a href="#">Release Dates</a></li>                
+                <li> <a href="#">Accessories</a></li>                
+                <li> <a href="#">Best Sellers</a></li>                
+                <li> <a href="#">New Arrivals</a></li>                
+                <li> <a href="#">Sale</a></li>                
+              </ul>
+              
+              <ul>
+                <h3>COLLECTIONS</h3>
+                <li> <a href="#">Shoes</a></li>  
+                <li> <a href="#">Clothing</a></li> 
+                <li> <a href="#">Accessories</a></li>                
+                <li> <a href="#">Release Dates</a></li>                
+                <li> <a href="#">Accessories</a></li>                
+                <li> <a href="#">Best Sellers</a></li>                
+                <li> <a href="#">New Arrivals</a></li>                
+                <li> <a href="#">Sale</a></li>                
+              </ul>
+              <ul>
+                <h3>COMPANY INFO</h3>
+                <li> <a href="#">Shoes</a></li>  
+                <li> <a href="#">Clothing</a></li> 
+                <li> <a href="#">Accessories</a></li>                
+                <li> <a href="#">Release Dates</a></li>                
+                <li> <a href="#">Accessories</a></li>                
+                <li> <a href="#">Best Sellers</a></li>                
+                <li> <a href="#">New Arrivals</a></li>                
+                <li> <a href="#">Sale</a></li>                
+              </ul>
+              <ul>
+              <h3>SUPPORT</h3>
+                <li> <a href="#">Shoes</a></li>  
+                <li> <a href="#">Clothing</a></li> 
+                <li> <a href="#">Accessories</a></li>                
+                <li> <a href="#">Release Dates</a></li>                
+                <li> <a href="#">Accessories</a></li>                
+                <li> <a href="#">Best Sellers</a></li>                
+                <li> <a href="#">New Arrivals</a></li>                
+                <li> <a href="#">Sale</a></li>                
+              </ul>
+          </div>
+      </footer>
+      <footer>
+          <div class="final">
+            <a href="#">USA</a>
+            <p>© 2022 adidas America, Inc.</p>              
+            <div class="line">
+            <a href="#">Contact</a>            
+            </div>
+          </div>
+      </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="/assets/js/main.js"></script>
 </html>
